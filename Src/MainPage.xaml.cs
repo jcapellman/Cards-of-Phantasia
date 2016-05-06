@@ -12,25 +12,27 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SpaceTactics.ViewModels;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace Shawnimon.UWP
+namespace SpaceTactics
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class GamePage : Page
+    public sealed partial class MainPage : Page
     {
-		readonly Game1 _game;
-
-		public GamePage()
+        public MainPage()
         {
             this.InitializeComponent();
 
-			// Create the game.
-			var launchArguments = string.Empty;
-            _game = MonoGame.Framework.XamlGame<Game1>.Create(launchArguments, Window.Current.CoreWindow, swapChainPanel);
+            DataContext = new MainPageModel();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            ((MainPageModel)DataContext).LoadData();
         }
     }
 }

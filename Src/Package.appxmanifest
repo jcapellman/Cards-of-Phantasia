@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="259cf50c-eeac-4754-9d95-4b01849e3dd8"
+    Name="f55c833b-5929-4905-85c0-61b078fabaf1"
     Publisher="CN=jcape"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="259cf50c-eeac-4754-9d95-4b01849e3dd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="f55c833b-5929-4905-85c0-61b078fabaf1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Shawnimon.UWP</DisplayName>
+    <DisplayName>SpaceTactics</DisplayName>
     <PublisherDisplayName>jcape</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,13 +30,14 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="Shawnimon.UWP.App">
+      EntryPoint="SpaceTactics.App">
       <uap:VisualElements
-        DisplayName="Shawnimon.UWP"
-        Square150x150Logo="Assets\Logo.png"
-        Square44x44Logo="Assets\SmallLogo.png"
-        Description="Shawnimon.UWP"
-        BackgroundColor="#464646">
+        DisplayName="SpaceTactics"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="SpaceTactics"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
