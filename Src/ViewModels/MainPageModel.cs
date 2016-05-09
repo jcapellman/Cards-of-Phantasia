@@ -13,6 +13,9 @@ namespace SpaceTactics.ViewModels
 {
     public class MainPageModel : INotifyPropertyChanged
     {
+        public const int HEIGHT = 10;
+        public const int WIDTH = 10;
+
         private ObservableCollection<Tileset> _tiles;
 
         public ObservableCollection<Tileset> Tiles
@@ -28,7 +31,7 @@ namespace SpaceTactics.ViewModels
 
             var numItems = 0;
 
-            for (var x = 0; x < 64; x++)
+            for (var x = 0; x < HEIGHT * WIDTH; x++)
             {
                 var tile = new Tileset
                 {
