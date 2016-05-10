@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:SpaceTactics.ViewModels"
+    xmlns:controls="using:SpaceTactics.Controls"
     mc:Ignorable="d">
 
     <Page.DataContext>
@@ -20,7 +21,6 @@
 
         <TextBlock Grid.Row="0" Text="SpaceTACTICS" FontSize="40" Foreground="White" FontFamily="Impact" Margin="10,10,0,10" />
 
-        <Grid Grid.Row="1" x:Name="gMain" Margin="10,0,10,10">
-        </Grid>
+        <controls:MapGrid Grid.Row="1" x:Name="gMain" Rows="8" Columns="8" ItemSource="{Binding Tiles, Mode=TwoWay}" Margin="10,0,10,10" />
     </Grid>
 </Page>
