@@ -34,31 +34,37 @@ namespace SpaceTactics.Controls {
         }
 
         private void MapGrid_Loaded(object sender, RoutedEventArgs e) {
-            for (var x = 0; x < Columns; x++) {
+            for (var x = 0; x < Rows; x++) {
                 gMain.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
             }
 
-            for (var x = 0; x < Rows; x++) {
+            for (var x = 0; x < Columns; x++) {
                 gMain.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
             }
 
-            var rowCount = 0;
+            var colCount = 0;
             var currentRow = 0;
 
+            var itemWidth = gMain.ActualWidth/Columns;
+            var itemHeight = gMain.ActualHeight/Rows;
+
             foreach (var item in ItemSource) {
-                if (rowCount == Columns) {
+                if (colCount == Columns) {
                     currentRow++;
-                    rowCount = 0;
+                    colCount = 0;
                 }
 
                 var tile = new MapTile(item);
                 
+                tile.SetValue(WidthProperty, itemWidth);
+                tile.SetValue(HeightProperty, itemHeight);
+
                 tile.SetValue(Grid.RowProperty, currentRow);
-                tile.SetValue(Grid.ColumnProperty, rowCount);
+                tile.SetValue(Grid.ColumnProperty, colCount);
 
                 gMain.Children.Add(tile);
 
-                rowCount++;
+                colCount++;
             }
         }
     }

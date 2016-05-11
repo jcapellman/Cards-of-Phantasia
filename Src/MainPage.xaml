@@ -16,11 +16,11 @@
     <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="SpaceTACTICS" FontSize="40" Foreground="White" FontFamily="Impact" Margin="10,10,0,10" />
+        <TextBlock Grid.Row="0" Text="Cards of Phantasia" FontSize="40" Foreground="White" FontFamily="Impact" Margin="10,10,0,10" />
 
-        <controls:MapGrid Grid.Row="1" x:Name="gMain" Rows="8" Columns="8" ItemSource="{Binding Tiles, Mode=TwoWay}" Margin="10,0,10,10" />
+        <controls:MapGrid Grid.Row="1" x:Name="gMain" Rows="5" Columns="10" ItemSource="{Binding Tiles, Mode=TwoWay}" Margin="10,0,10,10" />
     </Grid>
 </Page>

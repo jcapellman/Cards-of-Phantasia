@@ -9,7 +9,7 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid BorderBrush="#1e1e1e" Width="64" Height="64"  BorderThickness="1">
+    <Grid BorderBrush="#1e1e1e" BorderThickness="1">
         <Grid.Background>
             <ImageBrush x:Name="ibBackground" />
         </Grid.Background>
