@@ -33,6 +33,16 @@ namespace SpaceTactics.Controls {
             this.Loaded += MapGrid_Loaded;
         }
 
+        public void Refresh(double windowWidth, double windowHeight) {
+            var itemWidth = (windowWidth - 50) / Columns;
+            var itemHeight = (windowHeight - 100) / Rows;
+           
+            for (var x = 0; x < gMain.Children.Count; x++) {
+                gMain.Children[x].SetValue(WidthProperty, itemWidth);
+                gMain.Children[x].SetValue(HeightProperty, itemHeight);
+            }
+        }
+
         private void MapGrid_Loaded(object sender, RoutedEventArgs e) {
             for (var x = 0; x < Rows; x++) {
                 gMain.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });

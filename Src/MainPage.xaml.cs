@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 using SpaceTactics.ViewModels;
@@ -11,6 +12,12 @@ namespace SpaceTactics {
             this.InitializeComponent();
 
             DataContext = new MainPageModel();
+
+            this.SizeChanged += MainPage_SizeChanged;
+        }
+
+        private void MainPage_SizeChanged(object sender, SizeChangedEventArgs e) {
+            gMain.Refresh(this.ActualWidth, this.ActualHeight);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
