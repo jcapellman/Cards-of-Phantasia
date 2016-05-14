@@ -1,25 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.UI.Xaml.Media.Imaging;
-using SpaceTactics.Transports;
 
-namespace SpaceTactics.ViewModels
-{
-    public class MainPageModel : INotifyPropertyChanged
-    {
+using Windows.UI.Xaml.Media.Imaging;
+
+using mbs.cardlandia.game.uwp.library.Implementatinos.Match;
+
+namespace mbs.cardlandia.game.uwp.ViewModels {
+    public class MainPageModel : INotifyPropertyChanged {
         public const int HEIGHT = 10;
         public const int WIDTH = 10;
 
         private ObservableCollection<Tileset> _tiles;
 
-        public ObservableCollection<Tileset> Tiles
-        {
+        public ObservableCollection<Tileset> Tiles {
             get { return _tiles; }
             set { _tiles = value; OnPropertyChanged(); }
         }
@@ -31,8 +26,7 @@ namespace SpaceTactics.ViewModels
 
             var numItems = 0;
 
-            for (var x = 0; x < HEIGHT * WIDTH; x++)
-            {
+            for (var x = 0; x < HEIGHT * WIDTH; x++) {
                 var tile = new Tileset
                 {
                     BackgroundImage = new BitmapImage(new Uri("ms-appx:///Assets/Textures/Ground/brick.jpg")),
@@ -40,34 +34,27 @@ namespace SpaceTactics.ViewModels
 
                 var rando = rand.Next(0, 10) % 2 == 0;
 
-                if (numItems < 10 && rando)
-                {
-                    rando = rand.Next(0, 10)%2 == 0;
+                if (numItems < 10 && rando) {
+                    rando = rand.Next(0, 10) % 2 == 0;
 
-                    if (rando)
-                    {
+                    if (rando) {
                         tile.CharacterImage =
                             new BitmapImage(new Uri("ms-appx:///Assets/Textures/Characters/marine.png"));
-                    }
-                    else
-                    {
+                    } else {
                         tile.CharacterImage = new BitmapImage(new Uri("ms-appx:///Assets/Textures/Characters/Thor.png"));
                     }
                     numItems++;
-                }
-                else
-                {
+                } else {
                     tile.CharacterImage = tile.BackgroundImage;
                 }
 
                 Tiles.Add(tile);
-            }    
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }

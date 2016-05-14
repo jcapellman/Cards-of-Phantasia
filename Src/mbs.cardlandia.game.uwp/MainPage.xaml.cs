@@ -2,9 +2,9 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-using SpaceTactics.ViewModels;
+using mbs.cardlandia.game.uwp.ViewModels;
 
-namespace SpaceTactics {
+namespace mbs.cardlandia.game.uwp {
     public sealed partial class MainPage : Page {
         private MainPageModel viewModel => (MainPageModel) DataContext;
 

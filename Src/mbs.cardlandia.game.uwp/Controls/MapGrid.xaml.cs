@@ -3,9 +3,9 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-using SpaceTactics.Transports;
+using mbs.cardlandia.game.uwp.library.Implementatinos.Match;
 
-namespace SpaceTactics.Controls {
+namespace mbs.cardlandia.game.uwp.Controls {
     public sealed partial class MapGrid : UserControl {
         public IEnumerable<Tileset> ItemSource {
             set { SetValue(ItemSourceProperty, value); }
