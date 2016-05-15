@@ -111,7 +111,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\mbs.cardlandia.game.uwp.library.rd.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\mbs.cardlandia.baseabstractions.game\mbs.cardlandia.baseabstractions.game.csproj">
+      <Project>{9b75b516-0002-423c-87b5-4efc405480eb}</Project>
+      <Name>mbs.cardlandia.baseabstractions.game</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0' ">
     <VisualStudioVersion>15.0</VisualStudioVersion>
   </PropertyGroup>

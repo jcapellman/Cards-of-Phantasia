@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mbs.cardlandia.chat.pcl", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mbs.cardlandia.game.uwp.library", "mbs.cardlandia.game.uwp.library\mbs.cardlandia.game.uwp.library.csproj", "{99BC9E51-3DD9-48FC-B683-BFB8A11AAA3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mbs.cardlandia.baseabstractions.game", "mbs.cardlandia.baseabstractions.game\mbs.cardlandia.baseabstractions.game.csproj", "{9B75B516-0002-423C-87B5-4EFC405480EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -503,6 +505,22 @@ Global
 		{99BC9E51-3DD9-48FC-B683-BFB8A11AAA3F}.Release|x64.Build.0 = Release|x64
 		{99BC9E51-3DD9-48FC-B683-BFB8A11AAA3F}.Release|x86.ActiveCfg = Release|x86
 		{99BC9E51-3DD9-48FC-B683-BFB8A11AAA3F}.Release|x86.Build.0 = Release|x86
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|ARM.Build.0 = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|x64.Build.0 = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B75B516-0002-423C-87B5-4EFC405480EB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -534,5 +552,6 @@ Global
 		{D6108DF6-F5A5-4358-B6A2-4C0A0B2379A6} = {A59831B4-D87B-42AC-84E6-4042A8865A20}
 		{EC5C2F69-E550-4537-908D-FF31D9195BBA} = {A59831B4-D87B-42AC-84E6-4042A8865A20}
 		{99BC9E51-3DD9-48FC-B683-BFB8A11AAA3F} = {5349EC90-2820-4EA9-9B58-B7EE9A578693}
+		{9B75B516-0002-423C-87B5-4EFC405480EB} = {1CC3F8EF-ABD0-4453-B8EA-300FBD709C49}
 	EndGlobalSection
 EndGlobal
