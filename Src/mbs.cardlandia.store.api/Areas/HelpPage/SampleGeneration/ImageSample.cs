@@ -1,6 +1,6 @@
 using System;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.

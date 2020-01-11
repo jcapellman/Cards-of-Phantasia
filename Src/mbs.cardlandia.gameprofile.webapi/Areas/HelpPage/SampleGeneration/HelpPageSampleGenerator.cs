@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.

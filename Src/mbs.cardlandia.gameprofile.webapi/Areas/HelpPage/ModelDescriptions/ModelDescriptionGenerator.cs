@@ -11,7 +11,7 @@ using System.Web.Http.Description;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.ModelDescriptions
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Generates model descriptions for given types.

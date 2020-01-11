@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage.ModelDescriptions
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage.ModelDescriptions
 {
     public class EnumTypeModelDescription : ModelDescription
     {

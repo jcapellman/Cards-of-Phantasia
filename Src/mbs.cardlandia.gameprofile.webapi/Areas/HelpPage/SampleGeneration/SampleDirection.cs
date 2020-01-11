@@ -1,4 +1,4 @@
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.ModelDescriptions;
-using mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.Models;
+using mbs.cardlandia.userprofile.webapi.Areas.HelpPage.ModelDescriptions;
+using mbs.cardlandia.userprofile.webapi.Areas.HelpPage.Models;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

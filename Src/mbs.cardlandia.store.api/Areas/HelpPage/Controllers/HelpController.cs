@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using mbs.cardlandia.store.api.Areas.HelpPage.ModelDescriptions;
-using mbs.cardlandia.store.api.Areas.HelpPage.Models;
+using mbs.cardlandia.store.webapi.Areas.HelpPage.ModelDescriptions;
+using mbs.cardlandia.store.webapi.Areas.HelpPage.Models;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage.Controllers
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

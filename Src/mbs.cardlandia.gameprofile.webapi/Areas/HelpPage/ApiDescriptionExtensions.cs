@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

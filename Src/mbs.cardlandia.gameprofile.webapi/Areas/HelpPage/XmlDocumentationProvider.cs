@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.ModelDescriptions;
+using mbs.cardlandia.userprofile.webapi.Areas.HelpPage.ModelDescriptions;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

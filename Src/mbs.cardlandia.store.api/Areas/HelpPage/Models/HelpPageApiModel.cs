@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using mbs.cardlandia.store.api.Areas.HelpPage.ModelDescriptions;
+using mbs.cardlandia.store.webapi.Areas.HelpPage.ModelDescriptions;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage.Models
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

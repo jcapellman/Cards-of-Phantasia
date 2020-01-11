@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.ModelDescriptions
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

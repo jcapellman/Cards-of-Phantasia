@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

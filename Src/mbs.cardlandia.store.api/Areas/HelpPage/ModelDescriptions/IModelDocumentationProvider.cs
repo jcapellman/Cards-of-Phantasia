@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace mbs.cardlandia.store.api.Areas.HelpPage.ModelDescriptions
+namespace mbs.cardlandia.store.webapi.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

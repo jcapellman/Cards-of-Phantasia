@@ -1,6 +1,6 @@
 using System;
 
-namespace mbs.cardlandia.gameprofile.webapi.Areas.HelpPage.ModelDescriptions
+namespace mbs.cardlandia.userprofile.webapi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.
